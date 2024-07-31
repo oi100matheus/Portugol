@@ -16,7 +16,33 @@ programa
 	
 	funcao inicio()
 	{
-		escreva("Olá Mundo")
+		real salario, ns
+		inteiro ano, genero
+		escreva("Digite seu salário: ")
+		leia(salario)
+		escreva("Digite quantos anos trabalha na empresa: ")
+		leia (ano)
+		escreva("Digite (1)masculino ou (2)feminino: ")
+		leia(genero)
+		se((genero==1)e(ano>=30)){
+			ns=salario+salario*0.25
+			escreva("Senhor, seu novo salário é de: R$"+ns)
+		}senao se((genero==1)e(ano>=20)e(ano<30)){
+			ns=salario+salario*0.13
+			escreva("Senhor, seu novo salário é de: R$"+ns)
+		}senao se((genero==1)e(ano<20)){
+			ns=salario+salario*0.03
+			escreva("Senhor, seu novo salário é de: R$"+ns)
+		}senao se((genero==2)e(ano>=20)){
+			ns=salario+salario*0.23
+			escreva("Senhora, seu novo salário é de: R$"+ns)
+		}senao se((genero==2)e(ano>=15)e(ano<20)){
+			ns=salario+salario*0.12
+			escreva("Senhora, seu novo salário é de: R$"+ns)
+		}senao se((genero==2)e(ano<15)){
+			ns=salario+salario*0.05
+			escreva("Senhora, seu novo salário é de: R$"+ns)
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -24,7 +50,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 547; 
+ * @POSICAO-CURSOR = 862; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
