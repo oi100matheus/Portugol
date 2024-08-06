@@ -6,10 +6,16 @@ Ex: Ao chamar Gerador() aparece:
 +-------=======------+*/
 programa
 {
+	funcao vazio gerador(){
+		escreva("+-----=======-----+\n")
+		escreva("    Olá, Mundo!\n")
+		escreva("+-----=======-----+\n")
+	}
 	
-	funcao inicio()
+	funcao vazio inicio()
 	{
-		escreva("Olá Mundo")
+		escreva("Olá Mundo\n")
+		gerador()
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -17,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 257; 
+ * @POSICAO-CURSOR = 386; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
